@@ -6,10 +6,15 @@ const LeftMenu = () => {
         <div className="border-end bg-white" id="sidebar-wrapper">
             <div className="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
             <div className="list-group list-group-flush">
-                <Link href={{pathname:'/posts/list'}}><a className="list-group-item list-group-item-action list-group-item-light p-3"
-                   href="#!">Dashboard</a></Link>
-                <a className="list-group-item list-group-item-action list-group-item-light p-3"
-                   href="#!">Shortcuts</a>
+
+                <Link href={{pathname: '/posts/list'}}>
+                    <a className="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="#!">Posts</a></Link>
+
+                <Link href={{pathname: '/todos/list'}}>
+                    <a className="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="#!">Todos</a></Link>
+
                 <a className="list-group-item list-group-item-action list-group-item-light p-3"
                    href="#!">Overview</a>
                 <a className="list-group-item list-group-item-action list-group-item-light p-3"
